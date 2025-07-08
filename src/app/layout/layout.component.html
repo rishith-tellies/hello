@@ -1,0 +1,43 @@
+<div class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-emerald-800 text-white">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-gray-800 border-b border-gray-700 shadow-md">
+    <h1 class="text-2xl font-bold text-emerald-400">Lost and Found</h1>
+    <img src="https://i.pravatar.cc/100" alt="Avatar" class="w-10 h-10 rounded-full border-2 border-emerald-500" />
+  </nav>
+
+  <!-- Sidebar + Content -->
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="hidden md:block w-52 bg-gray-900 border-r border-gray-700 p-4">
+      <button routerLink="/found" routerLinkActive="bg-emerald-600"
+        class="w-full mb-4 px-4 py-2 rounded bg-gray-800 hover:bg-emerald-700 transition">
+        Found Items
+      </button>
+      <button routerLink="/lost" routerLinkActive="bg-red-600"
+        class="w-full px-4 py-2 rounded bg-gray-800 hover:bg-red-700 transition">
+        Lost Items
+      </button>
+    </aside>
+
+    <!-- Main routed content -->
+    <main class="flex-1 p-4">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+
+  <!-- Speed Dial -->
+  <div class="fixed bottom-6 right-6 group z-50">
+    <div class="flex flex-col items-end mb-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
+      <button routerLink="/found"
+        class="mb-2 p-3 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-lg">Found</button>
+      <button routerLink="/lost"
+        class="p-3 rounded-full bg-red-500 hover:bg-red-600 shadow-lg">Lost</button>
+    </div>
+    <button
+      class="bg-teal-600 hover:bg-teal-700 p-4 rounded-full text-xl font-bold shadow-lg transition-all duration-200 hover:scale-105">
+      +
+    </button>
+  </div>
+
+</div>
