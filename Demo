@@ -1,0 +1,43 @@
+PS C:\Users\KJC Staff\Desktop\hello_git\hello> git config --global user.name "rishith-tellies"          
+PS C:\Users\KJC Staff\Desktop\hello_git\hello> git commit -m'testing'
+[master 6c2ec4e] testing
+ 1 file changed, 1 insertion(+)
+PS C:\Users\KJC Staff\Desktop\hello_git\hello> git push 
+info: please complete authentication in your browser...
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 503 bytes | 503.00 KiB/s, done.
+Total 6 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/rishith-tellies/hello.git
+   8df7f5c..6c2ec4e  master -> master
+PS C:\Users\KJC Staff\Desktop\hello_git\hello> git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/app/found-items/found-items.component.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\KJC Staff\Desktop\hello_git\hello> git add . 
+PS C:\Users\KJC Staff\Desktop\hello_git\hello> git commit -m'changed the value of option'  
+[master 73fa9e8] changed the value of option
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\KJC Staff\Desktop\hello_git\hello> git push   
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 505 bytes | 505.00 KiB/s, done.
+Total 6 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/rishith-tellies/hello.git
+   6c2ec4e..73fa9e8  master -> master
+PS C:\Users\KJC Staff\Desktop\hello_git\hello> git pull 
+Already up to date.
+PS C:\Users\KJC Staff\Desktop\hello_git\hello> ng serve
+✔ Browser application bundle generation complete.
